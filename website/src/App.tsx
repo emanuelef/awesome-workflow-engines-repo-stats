@@ -12,16 +12,11 @@ import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Routes, Route, Link } from "react-router-dom";
 
 import TimeSeriesChart from "./TimeSeriesChart";
-import DepsChart from "./DepsChart";
 import BubbleChart from "./BubbleChart";
 
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-import TableViewRounded from "@mui/icons-material/TableViewRounded";
 import ViewListRoundedIcon from "@mui/icons-material/ViewListRounded";
-import BarChartRoundedIcon from "@mui/icons-material/BarChartRounded";
 import TimelineRoundedIcon from "@mui/icons-material/TimelineRounded";
-import LibraryBooksRoundedIcon from "@mui/icons-material/LibraryBooksRounded";
-import ViewModuleRoundedIcon from "@mui/icons-material/ViewModuleRounded";
 import BubbleChartRoundedIcon from "@mui/icons-material/BubbleChartRounded";
 
 import GitHubButton from "react-github-btn";
@@ -206,10 +201,9 @@ const columns: GridColDef[] = [
     valueGetter: (val) => parseInt(val),
   },
   {
-    field: "dependencies",
-    headerName: "Direct deps",
-    width: 100,
-    valueGetter: (val) => parseInt(val),
+    field: "language",
+    headerName: "Lang.",
+    width: 110,
   },
   {
     field: "days-since-creation",
@@ -328,8 +322,6 @@ function App() {
   const [collapsed, setCollapsed] = useState(true);
   const [lastUpdate, setLastUpdate] = useState("Unknown");
   const [mainCategory, setMainCategory] = useState("All");
-  const [subCategory, setSubCategory] = useState("All");
-  const [subCategories, setSubCategories] = useState([]);
   const [selectedTimelineMetric, setSelectedTimelineMetric] = useState(
     TimelineMetrics[0]
   );
@@ -342,15 +334,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const subCategories = [
-      ...new Set(
-        dataRows
-          .filter((el) => el["main-category"] === mainCategory)
-          .map((el) => el["sub-category"])
-      ),
-    ];
-    setSubCategories(subCategories);
-
     if (mainCategory === "All") {
       setFilteredDataRows(dataRows);
     } else {
@@ -359,18 +342,6 @@ function App() {
       );
     }
   }, [mainCategory]);
-
-  useEffect(() => {
-    if (subCategory === "All") {
-      setFilteredDataRows(
-        dataRows.filter((el) => el["main-category"] === mainCategory)
-      );
-    } else {
-      setFilteredDataRows(
-        dataRows.filter((el) => el["sub-category"] === subCategory)
-      );
-    }
-  }, [subCategory]);
 
   const Table = () => {
     return (
@@ -416,41 +387,6 @@ function App() {
             clearOnEscape
             onClear={() => {
               setMainCategory("All");
-            }}
-          />
-          <Autocomplete
-            disablePortal
-            id="combo-box-sub-category"
-            size="small"
-            options={subCategories}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                style={{
-                  marginRight: "20px",
-                  marginLeft: "10px",
-                  width: "400px",
-                }}
-                label="Enter sub category"
-                variant="outlined"
-                size="small"
-              />
-            )}
-            value={subCategory}
-            onChange={(e, v, reason) => {
-              if (reason === "clear") {
-                setSubCategory("All");
-              } else {
-                setSubCategory(v);
-              }
-            }}
-            onBlur={() => {
-              setSubCategory("All");
-            }}
-            clearOnBlur={false}
-            clearOnEscape
-            onClear={() => {
-              setSubCategory("All");
             }}
           />
         </div>
@@ -607,14 +543,8 @@ function App() {
               Table
             </MenuItem>
             <MenuItem
-              component={<Link to="/deps" className="link" />}
-              icon={<LibraryBooksRoundedIcon />}
-            >
-              Dependencies
-            </MenuItem>
-            <MenuItem
               component={
-                <Link to="/starstimeline/juspay/hyperswitch" className="link" />
+                <Link to="/starstimeline/elsa-workflows/elsa-core" className="link" />
               }
               icon={<TimelineRoundedIcon />}
             >
@@ -633,7 +563,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Table />} />
             <Route path="/table" element={<Table />} />
-            <Route path="/deps" element={<DepsChart />} />
             <Route
               path="/starstimeline/:user/:repository"
               element={<StarsTimeline />}

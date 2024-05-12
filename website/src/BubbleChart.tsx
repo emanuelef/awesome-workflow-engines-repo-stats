@@ -13,11 +13,10 @@ const csvURL =
 const logBase = (n, base) => Math.log(n) / Math.log(base);
 
 const categories = [
-  "Applications",
-  "Development tools",
-  "Libraries",
-  "Registries",
-  "Resources",
+  "Full fledged product",
+  "Library (embedded usage)",
+  "BPM Suite",
+  "SAAS",
 ];
 
 const mapCategoryToColor = (category) => {
@@ -26,7 +25,6 @@ const mapCategoryToColor = (category) => {
     [categories[1]]: "rgb(55, 44, 184)",
     [categories[2]]: "rgb(44, 160, 101)",
     [categories[3]]: "rgb(244, 60, 101)",
-    [categories[4]]: "rgb(244, 160, 71)",
   };
 
   // Return the color for the given category, or a default color if not found
