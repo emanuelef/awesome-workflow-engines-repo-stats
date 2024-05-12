@@ -138,7 +138,7 @@ func main() {
 		scanner := bufio.NewScanner(reader)
 
 		// * [Temporal](http://temporal.io/) [![Stars](https://img.shields.io/github/stars/temporalio/temporal.svg)](https://github.com/temporalio/temporal) - Temporal is a microservice orchestration
-		exp := regexp.MustCompile(`\*\s*\[([^\]]+)]\((https?://github\.com/[^)]+)\)`)
+		exp := regexp.MustCompile(`\*\s*\[([^]]+)]\([^)]+\)\s*\[!\[Stars]\([^)]+\)\]\((https?://github\.com/[^)]+)\)`)
 
 		mainCategory := "General"
 
@@ -157,7 +157,7 @@ func main() {
 			}
 
 			subMatch := exp.FindStringSubmatch(line)
-			if len(subMatch) >= 2 {
+			if len(subMatch) >= 3 {
 				repoUrl := subMatch[2]
 
 				repo := strings.TrimPrefix(repoUrl, "https://github.com/")
@@ -172,11 +172,9 @@ func main() {
 					fmt.Println("retrying after 5 minutes")
 					time.Sleep(5 * time.Minute)
 					result, err = client.GetAllStats(ctx, repo)
-					/*
-						if err != nil {
-							log.Fatal(err)
-						}
-					*/
+					if err != nil {
+						log.Fatal(err)
+					}
 				}
 
 				if err == nil {
