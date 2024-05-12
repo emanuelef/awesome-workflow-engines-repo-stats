@@ -172,9 +172,9 @@ func main() {
 					fmt.Println("retrying after 5 minutes")
 					time.Sleep(5 * time.Minute)
 					result, err = client.GetAllStats(ctx, repo)
-					if err != nil {
+/* 					if err != nil {
 						log.Fatal(err)
-					}
+					} */
 				}
 
 				if err == nil {
@@ -202,9 +202,9 @@ func main() {
 						fmt.Sprintf("%d", result.CommitsHistory.AddedLast30d),
 					})
 
-					if err != nil {
+/* 					if err != nil {
 						log.Fatal(err)
-					}
+					} */
 
 					if len(result.DirectDeps) > 0 {
 						for _, dep := range result.DirectDeps {
