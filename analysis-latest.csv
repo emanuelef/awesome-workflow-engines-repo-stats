@@ -11,7 +11,7 @@ camunda/camunda-bpm-platform,3983,38,15,9,0,9.541,1,2,4147,245,Java,false,0,Full
 ovh/cds,4454,25,15,6,0,5.613,1,2,2770,108,Go,false,115,Full fledged product,71.000,4,18
 ChunelFeng/CGraph,1466,57,32,18,2,38.881,0,3,1112,21,C++,false,0,Full fledged product,82.000,2,7
 CloudSlang/cloud-slang,232,1,0,0,0,4.310,18,69,3430,85,Java,false,0,Full fledged product,2.000,0,0
-conductor-oss/conductor,11028,1249,606,337,3,113.257,0,0,156,33,Java,false,0,Full fledged product,100.000,4,17
+conductor-oss/conductor,11029,1250,607,338,4,113.338,0,0,156,33,Java,false,0,Full fledged product,100.000,4,17
 copper-engine/copper-engine,261,2,1,0,0,7.663,12,21,3809,16,Java,false,0,Full fledged product,23.000,1,16
 couler-proj/couler,890,8,1,1,0,8.989,5,23,1363,32,Python,false,4,Full fledged product,22.000,1,1
 AgnostiqHQ/covalent,700,14,7,5,0,20.000,2,2,921,62,Python,false,26,Full fledged product,61.000,1,1
@@ -19,11 +19,11 @@ broadinstitute/cromwell,959,7,2,0,0,7.299,11,1,3313,280,Scala,false,0,Full fledg
 cylc/cylc-flow,319,1,0,0,0,3.135,27,4,4728,44,Python,false,0,Full fledged product,42.000,6,67
 yohamta/dagu,1194,42,25,19,1,35.176,0,1,751,28,Go,false,30,Full fledged product,90.000,3,35
 dagster-io/dagster,10336,231,115,56,1,22.349,0,1,2204,413,Python,false,0,Full fledged product,100.000,42,360
-DidactHQ/didact,37,8,4,1,1,216.216,0,196,197,1,,false,0,Full fledged product,22.000,0,0
+DidactHQ/didact,37,8,4,1,1,216.216,0,197,197,1,,false,0,Full fledged product,22.000,0,0
 treasure-data/digdag,1290,5,3,2,0,3.876,2,89,3158,268,Java,false,0,Full fledged product,12.000,0,0
 apache/dolphinscheduler,12170,219,160,141,0,17.995,1,2,1899,556,Java,false,0,Full fledged product,100.000,15,47
 elsa-workflows/elsa-core,5861,113,40,19,0,19.280,1,2,2050,128,C#,false,0,Full fledged product,90.000,9,29
-j-easy/easy-rules,4785,39,19,13,1,8.150,0,1141,4081,22,Java,false,0,Full fledged product,35.000,0,0
+j-easy/easy-rules,4785,39,19,13,1,8.150,0,1142,4081,22,Java,false,0,Full fledged product,35.000,0,0
 materialsproject/fireworks,339,15,8,4,0,44.248,1,16,4142,57,Python,false,9,Full fledged product,33.000,1,4
 fission/fission-workflows,361,0,0,0,0,0.000,51,1410,2495,17,Go,false,34,Full fledged product,0.000,0,0
 floraison/flor,252,4,4,1,0,15.873,6,67,3112,10,Ruby,false,0,Full fledged product,12.000,0,0
@@ -34,7 +34,7 @@ fieldryand/goflow,280,11,3,1,0,39.286,3,22,1512,2,Go,false,6,Full fledged produc
 huginn/huginn,41718,374,176,90,9,8.965,0,8,4081,230,Ruby,false,0,Full fledged product,92.000,3,42
 imixs/imixs-workflow,337,2,1,0,0,5.935,12,13,3773,6,Java,false,0,Full fledged product,29.000,1,2
 inngest/inngest,1430,61,30,15,1,42.657,0,1,1070,17,Go,false,70,Full fledged product,90.000,8,61
-kestra-io/kestra,6578,387,222,118,13,58.832,0,0,1723,50,Java,false,0,Full fledged product,100.000,8,153
+kestra-io/kestra,6578,387,222,117,13,58.832,0,0,1723,50,Java,false,0,Full fledged product,100.000,8,153
 thbar/kiba,1730,6,1,1,0,3.468,4,502,3950,5,Ruby,false,0,Full fledged product,12.000,0,0
 kubeflow/pipelines,3454,25,10,8,0,7.238,2,1,2192,469,Python,false,179,Full fledged product,75.000,11,46
 laravel-workflow/laravel-workflow,790,25,8,5,0,31.646,1,18,807,9,PHP,false,0,Full fledged product,35.000,1,1
@@ -43,17 +43,17 @@ martian-lang/martian,145,3,0,0,0,20.690,18,72,2517,24,Go,false,5,Full fledged pr
 netflix/metaflow,7634,102,41,14,1,13.361,0,2,1699,749,Python,false,0,Full fledged product,96.000,11,20
 masstransit/masstransit,6578,96,48,20,1,14.594,0,3,5049,424,C#,false,0,Full fledged product,90.000,7,48
 openstack/mistral,279,6,2,1,0,21.505,2,34,3848,190,Python,false,36,Full fledged product,18.000,0,0
-n8n-io/n8n,41123,897,398,190,18,21.813,0,0,1786,398,TypeScript,false,0,Full fledged product,100.000,28,127
+n8n-io/n8n,41123,897,397,190,17,21.813,0,0,1786,398,TypeScript,false,0,Full fledged product,100.000,28,127
 nextflow-io/nextflow,2555,22,15,8,0,8.611,2,0,4064,165,Groovy,false,0,Full fledged product,85.000,9,50
 node-red/node-red,18658,189,93,45,2,10.130,0,3,3902,220,JavaScript,false,89,Full fledged product,92.000,4,10
 apache/oozie,697,1,1,1,0,1.435,2,206,4624,38,Java,false,0,Full fledged product,10.000,0,0
-linkyndy/pallets,232,0,0,0,0,0.000,75,1311,2955,4,Ruby,false,0,Full fledged product,0.000,0,0
+linkyndy/pallets,232,0,0,0,0,0.000,76,1311,2955,4,Ruby,false,0,Full fledged product,0.000,0,0
 Parsl/parsl,461,7,5,4,1,15.184,0,2,2761,113,Python,false,11,Full fledged product,72.000,7,41
 pegasus-isi/pegasus,176,4,0,0,0,22.727,18,1,4114,29,Java,false,0,Full fledged product,54.000,4,33
 creactiviti/piper,479,0,0,0,0,0.000,46,277,2890,4,Java,true,0,Full fledged product,0.000,0,0
 plynx-team/plynx,291,0,0,0,0,0.000,33,113,2363,5,JavaScript,false,0,Full fledged product,0.000,0,0
-systemslab/popper,299,0,0,0,0,0.000,42,956,3144,43,Python,false,0,Full fledged product,0.000,0,0
-PrefectHQ/prefect,14780,312,142,63,7,21.110,0,1,2143,240,Python,false,19,Full fledged product,100.000,28,240
+systemslab/popper,299,0,0,0,0,0.000,42,956,3145,43,Python,false,0,Full fledged product,0.000,0,0
+PrefectHQ/prefect,14780,312,142,63,7,21.110,0,1,2143,240,Python,false,19,Full fledged product,100.000,28,239
 rundeck/rundeck,5342,46,19,13,1,8.611,0,2,4999,197,Groovy,false,0,Full fledged product,85.000,15,155
 snakemake/snakemake,2120,23,8,3,2,10.849,0,1,1682,300,HTML,false,0,Full fledged product,85.000,10,35
 StackStorm/st2,5921,31,17,9,0,5.236,1,4,3672,166,Python,false,65,Full fledged product,65.000,3,124
@@ -61,7 +61,7 @@ temporalio/temporal,10034,309,150,92,2,30.795,0,0,1669,201,Go,false,68,Full fled
 mikub/titanoboa,908,2,1,1,0,2.203,4,604,2195,2,Clojure,false,0,Full fledged product,12.000,0,0
 runabol/tork,482,23,13,7,0,47.718,1,2,354,6,Go,false,26,Full fledged product,71.000,2,15
 aelassas/wexflow,476,14,4,2,0,29.412,6,28,561,5,C#,false,0,Full fledged product,26.000,1,1
-windmill-labs/windmill,8690,266,144,65,5,30.610,0,0,738,81,Svelte,false,0,Full fledged product,100.000,8,237
+windmill-labs/windmill,8690,265,144,65,5,30.495,0,0,738,81,Svelte,false,0,Full fledged product,100.000,8,237
 yawlfoundation/yawl,85,1,0,0,0,11.765,24,458,3211,6,Java,false,0,Full fledged product,2.000,0,0
 zeebe-io/zeebe,3041,32,13,7,0,10.523,1,0,2975,144,Java,false,0,Full fledged product,85.000,37,1374
 Activiti/Activiti,9915,47,22,13,0,4.740,2,3,4259,207,Java,false,0,BPM Suite,62.000,1,7
@@ -74,7 +74,7 @@ camunda/camunda-bpm-platform,3983,38,15,9,0,9.541,1,2,4147,245,Java,false,0,Libr
 LiveRamp/captain,35,1,0,0,0,28.571,19,1374,2039,495,Java,false,0,Library (embedded usage),2.000,0,0
 UiPath/corewf,1098,8,1,1,0,7.286,4,2,2817,64,C#,false,0,Library (embedded usage),54.000,4,10
 javrasya/django-river,729,0,0,0,0,0.000,68,1196,3216,15,Python,false,7,Library (embedded usage),0.000,0,0
-dbos-inc/dbos-transact,212,29,18,2,1,136.792,0,0,305,11,TypeScript,false,0,Library (embedded usage),95.000,7,56
+dbos-inc/dbos-transact,212,29,17,2,1,136.792,0,0,305,11,TypeScript,false,0,Library (embedded usage),95.000,7,55
 Azure/durabletask,1449,20,11,5,0,13.803,1,2,3505,76,C#,false,0,Library (embedded usage),63.000,5,6
 kiegroup/kogito-runtimes,4,3,1,1,0,750.000,2,3,153,50,Java,false,0,Library (embedded usage),52.000,10,31
 NitorCreations/nFlow,182,3,2,1,1,16.484,0,9,3752,24,Java,false,0,Library (embedded usage),44.000,3,3
@@ -83,3 +83,4 @@ sartography/SpiffWorkflow,1604,18,10,4,1,11.222,0,11,5252,44,Python,false,0,Libr
 symfony/workflow,579,2,1,1,0,3.454,6,24,2880,66,PHP,false,0,Library (embedded usage),24.000,1,5
 viewflow/viewflow,2567,32,11,5,1,12.466,0,0,3897,1,Python,false,0,Library (embedded usage),87.000,1,8
 danielgerlag/workflow-core,5093,48,20,11,0,9.425,2,31,2734,54,C#,false,0,Library (embedded usage),31.000,0,0
+optimajet/WorkflowEngine.NET,862,7,0,0,0,8.121,18,6,3425,4,C#,false,0,Library (embedded usage),36.000,1,2
