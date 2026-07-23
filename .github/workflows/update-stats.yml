@@ -1,8 +1,6 @@
 name: Update Awesome Workflow engines stats
 
 on:
-  schedule:
-    - cron: "0 11 * * *" # runs at 11:00 UTC everyday
   workflow_dispatch:
 
 jobs:
